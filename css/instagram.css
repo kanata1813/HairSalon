@@ -1,0 +1,35 @@
+#instagram {
+    text-align: center;
+}
+
+#instagram .slider_insta {
+    width: 100vw;
+    margin: 0 auto;
+}
+
+#instagram .slider_margin {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#instagram img {
+    width: 100%;
+    max-height: 400px;
+}
+
+#instagram img:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    -ms-filter: "alpha(opacity=70)";
+    transition: all 0.3s ease-out;
+}
+
+#instagram .btn {
+    margin-top: 80px;
+}
+
+@media (min-width: 960px) {
+    #instagram .slider_insta {
+        width: 100vw;
+    }
+}

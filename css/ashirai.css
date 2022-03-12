@@ -1,0 +1,86 @@
+#top,
+#hairmenu,
+#stylist,
+#news,
+#instagram,
+#map {
+    position: relative;
+    overflow: hidden;
+}
+
+#top .shikaku1 {
+    position: absolute;
+    top: 0;
+    left: 500px;
+    width: 200px;
+    height: 300px;
+    background-color: var(--main_w_c);
+    z-index: -1000;
+    opacity: 0.5;
+}
+
+#hairmenu .shikaku2 {
+    position: absolute;
+    top: 700px;
+    left: 200px;
+    width: 56px;
+    height: 600px;
+    background-color: var(--main_b_c);
+    z-index: -1000;
+    opacity: 0.3;
+}
+
+#hairmenu .shikaku3 {
+    position: absolute;
+    top: 30px;
+    left: 900px;
+    width: 406px;
+    height: 500px;
+    background-color: var(--main_w_c);
+    z-index: -1000;
+    opacity: 0.5;
+}
+
+#stylist .shikaku4 {
+    position: absolute;
+    bottom: 100px;
+    right: 300px;
+    width: 300px;
+    height: 373px;
+    background-color: var(--main_w_c);
+    z-index: -1000;
+    opacity: 0.5;
+}
+
+#news .shikaku5 {
+    position: absolute;
+    top: 200px;
+    right: 300px;
+    width: 284px;
+    height: 358px;
+    background-color: var(--main_b_c);
+    z-index: -1000;
+    opacity: 0.5;
+}
+
+#instagram .shikaku6 {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    width: 300px;
+    height: 500px;
+    background-color: var(--main_w_c);
+    z-index: -1000;
+    opacity: 0.5;
+}
+
+#map .shikaku7 {
+    position: absolute;
+    top: 900px;
+    left: 300px;
+    width: 400px;
+    height: 100px;
+    background-color: var(--main_b_c);
+    z-index: -1000;
+    opacity: 0.3;
+}

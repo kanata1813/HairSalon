@@ -1,0 +1,55 @@
+#top .slider {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    margin: 40px 0;
+    padding: 0;
+}
+
+#top .slider_item {
+    width: 100%;
+    object-fit: cover;
+}
+
+#top img {
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
+}
+
+#top .copy {
+    text-align: left;
+    padding: 0 40px;
+    margin-top: 20px;
+}
+
+#top .copy h1 {
+    font-size: 20px;
+    line-height: 36px;
+}
+
+#top .copy p {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+@media (min-width: 960px) {
+    #top {
+        padding: 0 10%;
+    }
+    #top .top_con {
+        display: flex;
+        margin-top: 144px;
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 24px;
+    }
+    #top .slider {
+        width: 1000px;
+    }
+    #top .copy {
+        margin-top: 64px;
+        width: 70%;
+    }
+}

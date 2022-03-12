@@ -1,0 +1,70 @@
+#reserve {
+    padding: 0;
+    background-color: var(--main_b_c);
+}
+
+#reserve .title_menu {
+    margin-top: 0;
+}
+
+#reserve .reserve_con {
+    padding: 40px 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#reserve .reserve_cal {
+    margin-bottom: 20px;
+}
+
+#reserve .reserve_cal .cal_1,
+#reserve .reserve_cal .cal_2 {
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+}
+
+#reserve .reserve_cal .cal_1 {
+    border-top: 1px solid var(--font_c);
+    border-bottom: 1px solid var(--font_c);
+    padding: 8px 0;
+}
+
+#reserve .reserve_cal .cal_2 {
+    border-bottom: 1px solid var(--font_c);
+    padding: 8px 0;
+}
+
+#reserve .reserve_cal_hyo img {
+    margin: 40px auto 20px auto;
+    display: block;
+    width: 80%;
+}
+
+#reserve .btn a {
+    background-color: var(--main_b_c);
+}
+
+#reserve .btn a:hover {
+    background-color: var(--font_c);
+    opacity: 1;
+}
+
+@media (min-width: 960px) {
+    #reserve .reserve_con {
+        padding: 80px 10%;
+    }
+    #reserve .reserve_cal_con {
+        display: flex;
+        gap: 80px;
+        justify-content: center;
+        vertical-align: middle;
+    }
+    #reserve .reserve_cal {
+        margin-top: 64px;
+        align-items: center;
+    }
+    #reserve .reserve_cal_hyo img {
+        margin: 0;
+    }
+}

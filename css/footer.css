@@ -1,0 +1,86 @@
+#footer .footer_inf {
+    height: 440px;
+    background: linear-gradient(rgba(246, 246, 241, 0.55) 0%, rgba(246, 246, 241, 0.95) 100%), url(../img/footer.png);
+    padding: 80px 0;
+    width: 100%;
+}
+
+#footer .inf_1 {
+    text-align: center;
+}
+
+#footer .inf_1 img {
+    margin-bottom: 24px;
+}
+
+#footer .inf_address {
+    text-align: left;
+    padding: 0 25%;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+#footer .s {
+    font-size: 12px;
+}
+
+#footer .bg {
+    font-weight: 700;
+}
+
+#footer .footer_copy {
+    padding: 24px 0;
+    background-color: var(--font_c);
+    text-align: center;
+}
+
+#footer .footer_copy small {
+    font-family: 'Roboto', sans-serif;
+    font-size: 8px;
+    color: var(--base_c);
+}
+
+
+/*ボタン関係*/
+
+#footer .inf_2 {
+    display: none;
+}
+
+#footer .btn a {
+    background-color: var(--base_c);
+}
+
+#footer .btn a:hover {
+    opacity: 1;
+    background-color: var(--font_c);
+    transition: all 0.3s ease-out;
+}
+
+@media (min-width: 960px) {
+    #footer .footer_inf {
+        display: flex;
+        justify-content: space-between;
+        padding: 80px 20%;
+    }
+    #footer .inf_1 {
+        text-align: left;
+    }
+    #footer .inf_address {
+        padding: 0;
+    }
+    #footer .inf_2 {
+        display: flex;
+        gap: 40px;
+    }
+    #footer .inf_2 .btn {
+        margin: 0;
+        text-align: center;
+    }
+    #footer .inf_2 .btn p {
+        margin-bottom: 24px;
+    }
+    #footer .footer_copy small {
+        font-size: 16px;
+    }
+}

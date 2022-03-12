@@ -1,0 +1,47 @@
+#stylist {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#stylist img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+
+#stylist h2 {
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#stylist p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+
+@media (min-width: 960px) {
+    #stylist {
+        padding: 80px 10%;
+    }
+    #stylist .stylist_con {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+    #stylist h2 {
+        font-size: 24px;
+        font-weight: 900;
+        margin-bottom: 4px;
+        font-weight: bold;
+    }
+    #stylist p {
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0;
+    }
+}

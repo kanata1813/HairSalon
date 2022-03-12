@@ -1,0 +1,41 @@
+#top_return {
+    width: 64px;
+    height: 64px;
+    position: fixed;
+    right: 0;
+    bottom: -100px;
+    right: 30px;
+    background-color: var(--font_c);
+    border-radius: 50%;
+}
+
+#top_return a {
+    position: relative;
+    display: block;
+    width: 64px;
+    height: 64px;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+}
+
+#top_return a:hover {
+    transition: all 0.4s ease-in-out;
+    opacity: 0.5;
+}
+
+#top_return a::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f30c';
+    font-size: 20px;
+    color: var(--base_c);
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}

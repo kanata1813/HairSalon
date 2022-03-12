@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair salon Kobayas</title>
+    <!--import.css-->
+    <link rel="stylesheet" type="text/css" href="./css/import.css">
+    <!---->
+
+    <!--ファビコン-->
+    <link rel="icon" type="image/png" href="./img/favicon.ico" sizes="16x16 24x24 32x32 48x48 64x64" />
+    <!--googleフォント roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+
+    <!--slick-->
+    <link rel="stylesheet" href="./slick/css/slick.css" />
+    <link rel="stylesheet" href="./slick/css/slick-theme.css" />
+
+    <!--検索結果として表示されない-->
+    <meta name="robots" content="none">
+</head>
+
+<body>
+    <!--ヘッダー-->
+    <header id="header">
+        <div class="header_pc">
+            <img src="./img/logo/header_logo.svg" alt="ヘッダーロゴPC">
+            <div class="header_list_con">
+                <div class="header_list">
+                    <ul>
+                        <li>
+                            <a href="#hairmenu">
+                                <p class="roboto">Hair Menu</p>
+                                <p class="yu">ヘアメニュー</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#stylist">
+                                <p class="roboto">Stylist</p>
+                                <p class="yu">スタイリスト</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#news">
+                                <p class="roboto">News</p>
+                                <p class="yu">お知らせ</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#instagram">
+                                <p class="roboto">Instagram</p>
+                                <p class="yu">インスタグラム</p>
+                            </a>
+                        </li>
+                        <li class="yoyaku">
+                            <a href="#reserve">
+                                <p class="roboto">Reserve</p>
+                                <p class="yu">ご予約</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--ハンバーガーメニュー-->
+        <div class="header_hummenu_back">
+            <div class="header_logo">
+                <img src="./img/logo/header_logo_sp.svg" alt="ヘッダーロゴPC">
+            </div>
+            <input type="checkbox" id="header_hummenu_back_input">
+            <label for="header_hummenu_back_input" class="header_hummenu_back_btn">
+                <span></span>
+            </label>
+            <div class="header_hummenu_back_con">
+                <ul class="header_hummenu_list">
+                    <li class="header_hummenu_list_menu not_img">
+                        <img src="./img/logo/header_logo_sp_hmbg.svg" alt="ヘッダーロゴハンバーガーSP">
+                    </li>
+                    <li class="header_hummenu_list_menu">
+                        <a class="header_hummenu_list_menu_link" href="#hairmenu">
+                            <p class="roboto">Hair Menu</p>
+                            <p class="yu">ヘアメニュー</p>
+                        </a>
+                    </li>
+                    <li class="header_hummenu_list_menu">
+                        <a class="header_hummenu_list_menu_link" href="#stylist">
+                            <p class="roboto">Stylist</p>
+                            <p class="yu">スタイリスト</p>
+                        </a>
+                    </li>
+                    <li class="header_hummenu_list_menu">
+                        <a class="header_hummenu_list_menu_link" href="#news">
+                            <p class="roboto">News</p>
+                            <p class="yu">お知らせ</p>
+                        </a>
+                    </li>
+                    <li class="header_hummenu_list_menu">
+                        <a class="header_hummenu_list_menu_link" href="#instagram">
+                            <p class="roboto">Instagram</p>
+                            <p class="yu">インスタグラム</p>
+                        </a>
+                    </li>
+                    <li class="header_hummenu_list_menu">
+                        <a class="header_hummenu_list_menu_link" href="#reserve">
+                            <p class="roboto">Reserve</p>
+                            <p class="yu">ご予約</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Instagramクリック-->
+        <div class="instagram_right fadeup_ins fadeUpTrigger">
+            <p>
+                <a href="#instagram">
+                    Instagram
+                </a>
+            </p>
+        </div>
+    </header>
+
+    <!--トップ画像/文章-->
+    <div id="top">
+        <div class="shikaku1"></div>
+        <div class="top_con">
+            <ul class="slider">
+                <li class="slider_item"><img src=" ./img/topimage/topimage1.jpg" alt="トップイメージ1"></li>
+                <li class="slider_item"><img src=" ./img/topimage/topimage2.jpg" alt="トップイメージ2"></li>
+                <li class="slider_item"><img src=" ./img/topimage/topimage3.jpg" alt="トップイメージ3"></li>
+                <li class="slider_item"><img src=" ./img/topimage/topimage4.jpg" alt="トップイメージ4"></li>
+            </ul>
+            <div class="copy">
+                <h1>
+                    ナチュラルな美しさを引き出し、<br> 新しい自分に気付くきっかけを
+                    <br> ご提供します
+                </h1>
+                <p>
+                    常に新しい美の発見をお客様に
+                    <br>感じてもらうため、
+                    <br> Hair salon Kobayasでは
+                    <br> お一人おひとりに合わせたスタイルをご提案致します。
+                    <br> 髪だけでなく地肌も美しく
+                    <br> 健康になれるよう、
+                    <br> 技術を尽くしご対応させて頂きますので
+                    <br> お気軽にご相談ください。
+                    <br> 日々の疲れを癒す空間を整え、
+                    <br> みなさまをお待ちしております。
+                    <br>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--ヘアメニュー-->
+    <div id="hairmenu">
+        <div class="shikaku2"></div>
+        <div class="shikaku3"></div>
+        <h1 class="title_menu">
+            Hair Menu
+        </h1>
+        <p class="title_menujp">
+            ヘアメニュー
+        </p>
+        <div class="hairmenu_con">
+            <img src="./img/hairmenu.jpg" alt="ヘアメニュー">
+            <div class="menu_all">
+                <div class="menu_1">
+                    <div class="menu">
+                        <div class="title_menu border">
+                            Cut
+                        </div>
+                        <div class="menu_con">
+                            <div class="category">
+                                <p>一般</p>
+                                <p>学生</p>
+                                <p>キッズ<span class="small_text">（小学生まで）</span></p>
+                            </div>
+                            <div class="price">
+                                <p><span class="roboto">4,500</span>円</p>
+                                <p><span class="roboto">4,000</span>円</p>
+                                <p><span class="roboto">3,000</span>円</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="title_menu border">
+                            Color
+                        </div>
+                        <div class="menu_con">
+                            <div class="category">
+                                <p>カラー全体</p>
+                                <p>リタッチ</p>
+                                <p>マニキュア</p>
+                            </div>
+                            <div class="price">
+                                <p><span class="roboto">7,600</span>円</p>
+                                <p><span class="roboto">6,600</span>円</p>
+                                <p><span class="roboto">6,600</span>円</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_2">
+                    <div class="menu">
+                        <div class="title_menu border">
+                            Perm
+                        </div>
+                        <div class="menu_con">
+                            <div class="category">
+                                <p>パーマ</p>
+                                <p>縮毛矯正</p>
+                            </div>
+                            <div class="price">
+                                <p><span class="roboto">8,800</span>円</p>
+                                <p><span class="roboto">1,7000</span>円</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="title_menu border">
+                            Other
+                        </div>
+                        <div class="menu_con">
+                            <div class="category">
+                                <p>ヘッドスパ</p>
+                            </div>
+                            <div class="price">
+                                <p><span class="roboto">3,600</span>円</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--スタイリストの紹介-->
+    <div id="stylist">
+        <div class="shikaku4"></div>
+        <h1 class="title_menu">
+            Stylist
+        </h1>
+        <p class="title_menujp">
+            スタイリストの紹介
+        </p>
+        <div class="stylist_con">
+            <div class="stylist_list">
+                <img src="./img/stylist_list/akikotanaka.png" alt="田中明子">
+                <h2>田中明子</h2>
+                <p>似合わせカットが得意です</p>
+            </div>
+            <div class="stylist_list">
+                <img src="./img/stylist_list/ayumiyamamoto.png" alt="山本あゆみ">
+                <h2>山本あゆみ</h2>
+                <p>お客様に合う髪型をご提案します</p>
+            </div>
+            <div class="stylist_list">
+                <img src="./img/stylist_list/yukisoma.png" alt="相馬勇樹">
+                <h2>相馬勇樹</h2>
+                <p>癒しのひとときを…</p>
+            </div>
+            <div class="stylist_list">
+                <img src="./img/stylist_list/maisaito.png" alt="斎藤真衣">
+                <h2>斎藤真衣</h2>
+                <p>髪質改善が得意分野です</p>
+            </div>
+        </div>
+    </div>
+    <!--お知らせ-->
+    <div id="news">
+        <div class="shikaku5"></div>
+        <h1 class="title_menu">
+            News
+        </h1>
+        <p class="title_menujp">
+            お知らせ
+        </p>
+        <div class="news_list_con">
+            <div class="news_list">
+                <img src="./img/news_list/news_1.png" alt="ニュース画像1">
+                <div class="news_list_text">
+                    <p class="day">
+                        2022.02.15
+                    </p>
+                    <p class="news_text">
+                        卒業式・パーティーのヘアメイクご予約について
+                    </p>
+                </div>
+            </div>
+            <div class="news_list">
+                <img src="./img/news_list/news_2-3.png" alt="ニュース画像2">
+                <div class="news_list_text">
+                    <p class="day">
+                        2022.02.10
+                    </p>
+                    <p class="news_text">
+                        卒業式・パーティーのヘアメイクご予約について
+                    </p>
+                </div>
+            </div>
+            <div class="news_list">
+                <img src="./img/news_list/news_2-3.png" alt="ニュース画像3">
+                <div class="news_list_text">
+                    <p class="day">
+                        2022.02.01
+                    </p>
+                    <p class="news_text">
+                        2月の営業日のお知らせ
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="btn">
+            <a href="#">全てのニュースを見る</a>
+        </div>
+    </div>
+    <!--インスタグラム-->
+    <div id="instagram">
+        <div class="shikaku6"></div>
+        <h1 class="title_menu">
+            Instagram
+        </h1>
+        <p class="title_menujp">
+            インスタグラム
+        </p>
+        <div class="slider_insta">
+            <div>
+                <a href="#"><img src="./img/insta_list/1.png" alt="インスタ投稿写真1"></a>
+            </div>
+            <div>
+                <a href="#"><img src="./img/insta_list/2.png" alt="インスタ投稿写真2"></a>
+            </div>
+            <div>
+                <a href="#"><img src="./img/insta_list/3.png" alt="インスタ投稿写真3"></a>
+            </div>
+            <div>
+                <a href="#"><img src="./img/insta_list/4.png" alt="インスタ投稿写真4"></a>
+            </div>
+            <div>
+                <a href="#"><img src="./img/insta_list/5.png" alt="インスタ投稿写真5"></a>
+            </div>
+        </div>
+
+        <div class="btn">
+            <a href="#">フォローする</a>
+        </div>
+    </div>
+    <!--ご予約-->
+    <div id="reserve">
+        <div class="reserve_con">
+            <h1 class="title_menu">
+                Reserve
+            </h1>
+            <p class="title_menujp">
+                ご予約
+            </p>
+            <div class="reserve_cal_con">
+                <div class="reserve_cal">
+                    <div class="cal_1">
+                        <p>平日：<span>10：00～20：00</span></p>
+                        <p>土日祝：<span>10：00～18：00</span></p>
+                    </div>
+                    <div class="cal_2">
+                        <p>定休日：月曜、第二・第三火曜</p>
+                    </div>
+                </div>
+                <div class="reserve_cal_hyo">
+                    <img src="img/cal.svg" alt="カレンダー表">
+                </div>
+            </div>
+            <div class="btn">
+                <a href="#">予約をする</a>
+            </div>
+        </div>
+    </div>
+    <!--地図-->
+    <div id="map">
+        <div class="shikaku7"></div>
+        <div class="iframe_con">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d419793.0469967427!2d135.5060513127934!3d34.714430970069195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6ea21178c07%3A0xa60b2a2d7e2b9767!2z44OH44K444K_44Or44OP44Oq44Km44OD44OJ5aSn6Ziq5pys5qCh77yP44OH44K444K_44Or44OP44Oq44Km44OD44OJU1RVRElP5aSn6Ziq5qKF55Sw!5e0!3m2!1sja!2sjp!4v1646789696936!5m2!1sja!2sjp"
+                width="375" height="800" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <p>
+            こばやす鉄道小林町駅徒歩2分
+        </p>
+    </div>
+    <!--トップへ戻る-->
+    <div id="top_return">
+        <a class="top_link" href="#"></a>
+    </div>
+    <!--フッター-->
+    <footer id="footer">
+        <div class="footer_inf">
+            <div class="inf_1">
+                <img src="./img/logo/footer_logo_sp.svg" alt="フッターロゴ">
+                <div class="inf_address">
+                    <p>
+                        <span class="roboto">〒123-4560</span><br> 小林県小林市芋町南154-20
+                        <br>
+                        <span class="roboto s">TEL.</span>
+                        <span class="roboto bg">0000-5678-1234</span>
+                    </p>
+                </div>
+            </div>
+            <div class="inf_2">
+                <div class="btn">
+                    <p>ネットでいつでも予約</p>
+                    <a href="#">予約をする</a>
+                </div>
+                <div class="btn">
+                    <p>Instagramもやっています</p>
+                    <a href="#">フォローする</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_copy">
+            <small>@kana</small>
+        </div>
+
+    </footer>
+
+    <!--自作JS-->
+    <script src=" ./js/jquery-3.6.0.min.js"></script>
+    <script src=" ./js/hnbgmenu.js"></script>
+    <script src=" ./js/top_return.js"></script>
+    <script src="./js/ani.js"></script>
+    <!--slickJS-->
+    <script src="./slick/js/slick.min.js"></script>
+    <script src="./slick/js/common.js"></script>
+
+</body>
+
+</html>

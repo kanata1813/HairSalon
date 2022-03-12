@@ -1,0 +1,98 @@
+/*共通部分*/
+
+:root {
+    /*色アセット*/
+    --base_c: #F6F6F1;
+    --main_b_c: #B8DAE6;
+    --main_w_c: #FFFFFF;
+    --font_c: #3C3E36;
+    /*サイズ*/
+}
+
+* {
+    font-family: 'Roboto', sans-serif, "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+    letter-spacing: 0.1em;
+    color: var(--font_c);
+}
+
+body {
+    background-color: var( --base_c);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.4s ease-in-out;
+}
+
+#news a:hover,
+#instagram a:hover {
+    opacity: 1;
+}
+
+h1,
+h2,
+p {
+    overflow-wrap: normal;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.title_menu {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    margin: 0 0 8px 0;
+}
+
+.title_menujp {
+    font-family: YuGothic, "Yu Gothic Medium", "Yu Gothic";
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.btn {
+    margin: 80px auto;
+}
+
+.btn a {
+    padding: 20px 36px;
+    font-size: 16px;
+    border: solid 1px var(--font_c);
+    background-color: var(--base_c);
+    border-radius: 50vh;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease-out;
+}
+
+.btn a:hover {
+    font-size: 20px;
+    background-color: var(--font_c);
+    transition: all 0.3s ease-out;
+    color: var(--base_c);
+}
+
+@media (min-width: 960px) {
+    .btn {
+        margin: 80px auto;
+    }
+    .btn a {
+        padding: 24px 40px;
+    }
+}

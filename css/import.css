@@ -1,0 +1,29 @@
+/*cssのimport専用css*/
+
+
+/*リセットcss*/
+
+@import url("./reset/sanitize.css");
+
+/*共通のcss*/
+
+@import url("./default.css");
+@import url("./style.css");
+
+/*パーツ毎ののcss*/
+
+@import url("./header.css");
+@import url("./top.css");
+@import url("./hairmenu.css");
+@import url("./stylist.css");
+@import url("./news.css");
+@import url("./instagram.css");
+@import url("./reserve.css");
+@import url("./map.css");
+@import url("./top_return.css");
+@import url("./footer.css");
+
+/*その他のcss*/
+
+@import url("./ashirai.css");
+@import url("./animarion.css");

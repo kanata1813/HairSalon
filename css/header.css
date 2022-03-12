@@ -1,0 +1,226 @@
+body.noscroll {
+    overflow: hidden;
+}
+
+#header .header_pc {
+    display: none;
+}
+
+#header .roboto {
+    font-size: 24px;
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+#header .yu {
+    margin-bottom: 24px;
+    font-size: 12px;
+}
+
+#header .header_logo {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+#header .header_logo img {
+    width: 144px;
+}
+
+
+/*SP用ハンバーガーメニューのcss*/
+
+#header .header_hummenu_back_btn {
+    position: fixed;
+    top: 40px;
+    right: 10px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+}
+
+#header .header_hummenu_back_btn span,
+#header .header_hummenu_back_btn span:before,
+#header .header_hummenu_back_btn span:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 44px;
+    background-color: var(--font_c);
+    position: absolute;
+    transition: all 1s;
+}
+
+#header .header_hummenu_back_btn span:before {
+    bottom: 12px;
+}
+
+#header .header_hummenu_back_btn span:after {
+    top: 12px;
+}
+
+#header_hummenu_back_input:checked~.header_hummenu_back_btn span {
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 0.5s;
+    /*メニューオープン時は真ん中の線を透明にする*/
+}
+
+#header_hummenu_back_input:checked~.header_hummenu_back_btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+    transition: all 1s;
+}
+
+#header_hummenu_back_input:checked~.header_hummenu_back_btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+    transition: all 1s;
+}
+
+#header_hummenu_back_input {
+    display: none;
+}
+
+#header .header_hummenu_list {
+    padding: 80px 0;
+    text-align: center;
+}
+
+#header .header_hummenu_list_menu {
+    list-style: none;
+}
+
+#header .header_hummenu_list_menu img {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+#header .header_hummenu_list_menu_link {
+    font-size: 24px;
+    color: var(--font_c);
+    text-decoration: none;
+    position: relative;
+}
+
+#header .header_hummenu_list_menu_link:hover {
+    opacity: 0.5;
+}
+
+#header .header_hummenu_back_con {
+    width: 70%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 80;
+    background-color: var(--base_c);
+    transition: all 1s;
+}
+
+#header_hummenu_back_input:checked~.header_hummenu_back_con {
+    left: 30%;
+}
+
+#header .instagram_right {
+    display: none;
+}
+
+#header li:not(.not_img):hover {
+    opacity: 0.5;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+
+/*ヘッダーSP*/
+
+#header .header_sp {
+    text-align: center;
+    margin: -20px 0 20px 0;
+}
+
+@media (min-width: 960px) {
+    #header {
+        position: fixed;
+        top: 0;
+        background: var(--base_c);
+        z-index: 10000;
+        width: 100%;
+        height: 106px;
+        margin-top: -3px;
+    }
+    #header .header_hummenu_back {
+        display: none;
+    }
+    #header .header_hummenu_back {
+        display: none;
+    }
+    #header .header_pc {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #header img {
+        width: 200px;
+        align-items: center;
+        padding: 24px;
+    }
+    #header .header_list_con {
+        display: flex;
+    }
+    #header .header_list {
+        margin: 0;
+        vertical-align: middle;
+    }
+    #header .header_list_con ul {
+        display: flex;
+        margin: 0;
+        text-align: center;
+    }
+    #header .header_list_con ul li {
+        text-align: center;
+        padding: 24px;
+    }
+    #header .header_list ul:last-child {
+        margin-right: 0;
+    }
+    #header .header_list_con .yoyaku {
+        background-color: var(--font_c);
+        text-align: center;
+    }
+    #header .header_list_con .yoyaku a p {
+        color: var(--base_c);
+    }
+    #header .header_list_con .yoyaku a:hover {
+        cursor: pointer;
+        opacity: 0.5;
+    }
+    #header .header_list_con .roboto {
+        font-size: 20px;
+        margin: 0 0 4px 0;
+    }
+    #header .header_list_con .yu {
+        font-size: 16px;
+        margin: 0;
+    }
+    #header .instagram_right {
+        display: inline-block;
+        position: fixed;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        top: 300px;
+        right: 40px;
+        writing-mode: vertical-lr;
+        transition: all 0.3s ease-out;
+        text-align: center;
+    }
+    #header .instagram_right:hover {
+        opacity: 0.5;
+        transition: all 0.3s ease-out;
+        text-align: center;
+    }
+}
