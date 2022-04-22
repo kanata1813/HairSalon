@@ -61,7 +61,7 @@
     #footer .footer_inf {
         display: flex;
         justify-content: space-between;
-        padding: 80px 20%;
+        padding: 80px 10%;
     }
     #footer .inf_1 {
         text-align: left;
